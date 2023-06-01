@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
     public void userShouldLoginSuccessfullyWithValidCredentials(){
     driver.findElement(By.xpath("//input[@class='oxd-input oxd-input--active']")).sendKeys("Admin");
     driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
-    driver.findElement(By.xpath("//button[@type='submit']")).click();
+
    String actualTitleOfThePage = driver.getTitle();
    System.out.println(actualTitleOfThePage);
    String expectedTitleOfThePage = "OrangeHRM";
